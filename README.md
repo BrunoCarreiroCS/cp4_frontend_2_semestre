@@ -23,7 +23,7 @@ Aplicação em React + Vite para gerenciamento de tarefas voltado para desenvolv
 
 ## Repositório
 
-[Link do repositório](https://github.com/<usuario>/<repositorio>)
+[Link do repositório](https://github.com/BrunoCarreiroCS/cp4_frontend_2_semestre)
 
 ## Como executar
 
