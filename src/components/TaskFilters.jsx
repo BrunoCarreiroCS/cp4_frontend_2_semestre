@@ -8,17 +8,24 @@ const OPTIONS = [
 
 export function TaskFilters({ current, onChange }) {
   return (
-    <div className="task-filters">
-      {OPTIONS.map((option) => (
-        <button
-          key={option.value}
-          type="button"
-          className={option.value === current ? 'active' : ''}
-          onClick={() => onChange(option.value)}
-        >
-          {option.label}
-        </button>
-      ))}
+    <div className="flex gap-1 rounded-full border border-border bg-surface p-1">
+      {OPTIONS.map((option) => {
+        const isActive = option.value === current
+        return (
+          <button
+            key={option.value}
+            type="button"
+            onClick={() => onChange(option.value)}
+            className={`flex-1 rounded-full px-4 py-2 text-sm font-medium transition ${
+              isActive
+                ? 'bg-accent text-white shadow-sm'
+                : 'text-muted hover:bg-surface-alt hover:text-ink'
+            }`}
+          >
+            {option.label}
+          </button>
+        )
+      })}
     </div>
   )
 }

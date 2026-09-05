@@ -4,7 +4,7 @@ Projeto desenvolvido para o Checkpoint 4 da disciplina de Front (Engenharia de S
 
 ## Sistema de Lista de Tarefas do Programador
 
-Aplicação em React + Vite para gerenciamento de tarefas voltado para desenvolvedores, com persistência em `localStorage` e interface estilizada.
+Aplicação em React + Vite + Tailwind CSS para gerenciamento de tarefas voltado para desenvolvedores, com persistência em `localStorage` e interface estilizada.
 
 ### Funcionalidades
 
@@ -38,6 +38,6 @@ npm run dev
 src/
   components/   Componentes de UI (formulário, lista, item, filtros)
   hooks/        Hooks customizados (useTasks, useLocalStorage)
-  styles/       Estilos da aplicação
   utils/        Funções utilitárias e constantes
+  index.css     Configuração do Tailwind CSS e tema
 ```
